@@ -1,0 +1,23 @@
+= File Processor
+
+The primary goal of the File processor project is to segregate files on basis of extension and identify file that contains quarantine data.
+
+== Getting Started
+
+* FileReadWriteOperationServices
+1. FileReader.
+2. FileWriter.
+
+
+=== Usage
+Here is a quick steps for usage of File Processor project:
+
+1. InputFiles folder is present at location src/test/resources.
+2. Add files to folder if required.
+3. DemoApplicationTests contains unit test givenSourceDirAndExtensionList_whenProcessFiles_thenCopyToDestinationDirectory
+   use to run application.
+4. Specify directory path of InputFiles contain files to process.
+   Eg: String dirPath = "D:\\Users\\Assignment\\demo" +  "\\src\\test\\resources\\InputFiles";
+5. Run junit test case.
+6. System insights are present at console log.
+7. OutputFiles will get created at src\\test\\resources.
