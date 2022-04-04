@@ -12,12 +12,11 @@ The primary goal of the File processor project is to segregate files on basis of
 === Usage
 Here is a quick steps for usage of File Processor project:
 
-1. InputFiles folder is present at location src/test/resources.
+1. Sample InputFiles folder is present at location src/main/resources.
 2. Add files to folder if required.
-3. DemoApplicationTests contains unit test givenSourceDirAndExtensionList_whenProcessFiles_thenCopyToDestinationDirectory
-   use to run application.
-4. Specify directory path of InputFiles contain files to process.
-   Eg: String dirPath = "D:\\Users\\Assignment\\demo" +  "\\src\\test\\resources\\InputFiles";
-5. Run junit test case.
-6. System insights are present at console log.
-7. OutputFiles will get created at src\\test\\resources.
+3. Generate executable jar file using mvn clean package.
+4. Executable jar will get create in target/file-processor-0.0.1-SNAPSHOT.jar
+5  Run application using java -jar target/file-processor-0.0.1-SNAPSHOT.jar dirPath
+   Eg: java -jar target/file-processor-0.0.1-SNAPSHOT.jar E:\WorkSPace\file-processor\src\main\resources\InputFiles
+4. Output Files folder will get created at same location of Input Files.
+5. System insights are present at console log.
